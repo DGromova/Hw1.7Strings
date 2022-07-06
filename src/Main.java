@@ -17,7 +17,17 @@ public class Main {
         //Задание 3
     public static void task3() {
         String fullName = "Иванов Семён Семёнович";
-        String newFullName = fullName.replace('ё', 'е');
-        System.out.println("Данные ФИО сотрудника - " + newFullName);
+       //Способ 1
+       //String newFullName = fullName.replace('ё', 'е');
+       //System.out.println("Данные ФИО сотрудника - " + newFullName);
+       //Способ 2
+        String[] newFullName = fullName.split("");
+        System.out.print("Данные ФИО сотрудника - ");
+        for (int i = 0; i < newFullName.length; i++) {
+            if (newFullName[i].contains("ё")) {
+                newFullName[i] = "е";
+            }
+            System.out.print(newFullName[i]);
+        }
     }
 }
