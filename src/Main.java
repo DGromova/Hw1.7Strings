@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        task1_2();
-        task3();
+        task_1_2();
+        task_3();
     }
-    public static void task1_2() {
+    public static void task_1_2() {
         //Задание 1
         String firstName = "Ivan";
         String middleName = "Ivanovich";
@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Данные ФИО сотрудника для заполнения отчета - " + fullNameUpperCase);
     }
         //Задание 3
-    public static void task3() {
+    public static void task_3() {
         String fullName = "Иванов Семён Семёнович";
        //Способ 1
        //String newFullName = fullName.replace('ё', 'е');
